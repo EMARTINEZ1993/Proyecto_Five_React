@@ -200,7 +200,7 @@ const GoogleSheetIntegration = () => {
                   src={product.image} 
                   alt={product.name}
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/300x200?text=Producto+Orgánico';
+                    e.target.src = './placeholder-product.svg';
                   }}
                 />
                 {isOutOfStock && <div className="stock-overlay">Agotado</div>}

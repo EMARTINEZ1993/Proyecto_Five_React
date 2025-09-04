@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F1F8E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8F5E8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="300" height="200" fill="url(#bgGradient)" stroke="#C8E6C9" stroke-width="2"/>
+  
+  <!-- Icono de hoja -->
+  <g transform="translate(150,100)">
+    <path d="M-20 0 Q0 -30 20 0 Q0 30 -20 0" fill="#4CAF50" opacity="0.7"/>
+    <path d="M-20 0 Q0 -15 20 0" stroke="#2E7D32" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Texto -->
+  <text x="150" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">Producto Orgánico</text>
+  <text x="150" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4CAF50">Imagen no disponible</text>
+</svg>

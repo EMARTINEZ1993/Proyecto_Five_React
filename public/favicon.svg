@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular -->
+  <circle cx="50" cy="50" r="45" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  
+  <!-- Hoja principal -->
+  <path d="M30 50 Q50 20 70 50 Q50 80 30 50" fill="url(#leafGradient)"/>
+  
+  <!-- Vena de la hoja -->
+  <path d="M30 50 Q50 35 70 50" stroke="#1B5E20" stroke-width="1.5" fill="none"/>
+  
+  <!-- Texto "O" para Orgánico -->
+  <text x="50" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1B5E20">O</text>
+</svg>
