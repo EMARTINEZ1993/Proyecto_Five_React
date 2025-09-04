@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { UserProvider } from './context/UserContext';
 import Header from './components/Header';
@@ -54,25 +54,27 @@ function App() {
   return (
     <UserProvider>
       <CartProvider>
-        <div className="app">
-        <Header />
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/inicio" element={<Home />} />
-          <Route path="/nosotros" element={<AboutUs />} />
-          <Route path="/registro" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/perfil" element={<Dashboard />} />
-          <Route path="/perfil/editar" element={<EditProfile />} />
-          <Route path="/perfil/preferencias" element={<UserPreferences />} />
-          <Route path="/perfil/historial" element={<ActivityHistory />} />
-          <Route path="/perfil/cambiar-password" element={<ChangePassword />} />
-        </Routes>
-        
-          <Carrito/>
-          <Footer />
-        </div>
+        <Router>
+          <div className="app">
+          <Header />
+          
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/inicio" element={<Home />} />
+            <Route path="/nosotros" element={<AboutUs />} />
+            <Route path="/registro" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/perfil" element={<Dashboard />} />
+            <Route path="/perfil/editar" element={<EditProfile />} />
+            <Route path="/perfil/preferencias" element={<UserPreferences />} />
+            <Route path="/perfil/historial" element={<ActivityHistory />} />
+            <Route path="/perfil/cambiar-password" element={<ChangePassword />} />
+          </Routes>
+          
+            <Carrito/>
+            <Footer />
+          </div>
+        </Router>
       </CartProvider>
     </UserProvider>
   );
